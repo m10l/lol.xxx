@@ -61,12 +61,15 @@
 
   &__title {
     margin: 0;
-    font-size: map-get($font-size, large);
     text-align: center;
     flex: 1;
     color: map-get($color-palette-dracula, foreground);
     font-size: map-get($font-size, x-large);
-      line-height: $vertical-rhythm-unit * 1.5;
+    line-height: $vertical-rhythm-unit * 1.5;
+
+    @media (max-width: 450px) {
+      font-size: map-get($font-size, large);
+    }
 
     &--dark {
       color: map-get($color-palette-dracula, background);
