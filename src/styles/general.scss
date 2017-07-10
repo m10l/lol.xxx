@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: map-get($color-palette-dracula, selection);
+  color: map-get($color-palette-dracula, background);
+}
+
+.section {
+  padding: 0 $vertical-rhythm-unit;
+
+  &--intro {
+    background: map-get($color-palette-dracula, selection);
+  }
+
+  &__inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}

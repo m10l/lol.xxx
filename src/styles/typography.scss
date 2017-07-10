@@ -1,0 +1,66 @@
+body {
+  font-family: futura-pt, Futura, sans-serif;
+  font-size: map-get($font-size, medium);
+  line-height: $vertical-rhythm-unit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 500;
+}
+
+pre {
+  font-size: map-get($font-size, small);
+}
+
+.lead {
+  margin: 0;
+  text-align: center;
+  font-size: map-get($font-size, jumbo);
+  line-height: ($vertical-rhythm-unit * 2);
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+
+  @media (max-width: 450px) {
+    font-size: map-get($font-size, large);
+    line-height: ($vertical-rhythm-unit * 1.5);
+  }
+}
+
+.section__title {
+  margin: 0 0 ($vertical-rhythm-unit * 3);
+  text-align: center;
+  font-size: map-get($font-size, jumbo);
+  line-height: (24px * 2);
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: darken(map-get($color-palette-dracula, background), 10);
+}
+
+a {
+  color: map-get($color-palette-dracula, cyan);
+  text-decoration: none;
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate3d(-50%, 200%, 0);
+    background: currentColor;
+    transition: ease 250ms;
+    opacity: 0;
+  }
+
+  &:hover:before {
+    transform: translate3d(-50%, 0, 0);
+    opacity: 1;
+  }
+}
+
+.word-wrap {
+  white-space: normal;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "lol.xxx",
+  "version": "0.1.0",
+  "main": "app.js",
+  "author": "Mike Mitchell <omg@lol.xxx>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config dev.webpack.config.js",
+    "build": "npm run clean-dist && NODE_ENV=production webpack -p --config prod.webpack.config.js",
+    "clean-dist": "rimraf ./dist/*"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "normalize-css": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.2",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
