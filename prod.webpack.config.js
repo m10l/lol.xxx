@@ -44,7 +44,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: '!!handlebars-loader!src/index.hbs',
       filename: 'index.html',
-      title: 'Front End Developer &amp; UX Designer in Berlin | Mike Mitchell',
+      title: 'Front End Developer & UX Designer in Berlin | Mike Mitchell',
       inject: 'body',
       hash: true,
       chunks: ['main'],
