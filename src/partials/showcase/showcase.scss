@@ -91,7 +91,7 @@
     width: 100%;
     left: 0;
     padding: $vertical-rhythm-unit * 2;
-    transition: ease 500ms;
+    transition: transform ease 500ms;
     transform: translate3d(0,0,0);
     z-index: 20;
     border-radius: 6px;
@@ -108,5 +108,11 @@
     border-radius: 6px;
     color: map-get($color-palette-dracula, background);
     padding: $vertical-rhythm-unit * 2;
+    transform: scale3d(0.75,0.75,1);
+    transition: transform ease 500ms;
+
+    .card:hover & {
+      transform: scale3d(1,1,1);
+    }
   }
 }
