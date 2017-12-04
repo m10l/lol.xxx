@@ -12,7 +12,7 @@ module.exports = {
       title: 'Only God Forgives',
       description: 'Salvation as a Service. A confessions hotline powered by Twilio, built during a hacknight at Simpleweb. All recordings are saved and served for users to vote on.',
       tags: ['Twilio', 'Node.js', 'Express', 'MongoDB'],
-      href: 'http://only-god-forgives.herokuapp.com/'
+      href: 'https://m10l.github.io/conf-react/'
     },
     {
       preview: 'A jQuery Plugin for Unobtrusive Form Labels',

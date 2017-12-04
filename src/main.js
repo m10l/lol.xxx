@@ -172,7 +172,7 @@ class Terminal {
         contents: 'Email   : <a href="mailto:omg@lol.xxx">omg@lol.xxx</a>\nTwitter : <a href="https://www.twitter.com/innernets/">@innernets</a>\nGitHub  : <a href="https://www.github.com/m10l/">m10l</a>'
       },
       about: {
-        contents: '<span class="word-wrap">A front end developer with over five years of agency experience and working with startups,\nspecialising in designing and building user interfaces for digital products and mobile apps.\n<br><br>\nCurrently working at <a href="http://www.wunderflats.com/" target="_blank">Wunderflats</a> in the centre of Berlin.\n<br><br>\nTechnologies: HTML5, Sass, JavaScript, React, Angular, Ionic, Node.js, Express, PHP, Wordpress, Rails\n<br><br>\nHobbies / Interests: Photography, making music (<a href="https://soundcloud.com/hellotulips" target="_blank">SoundCloud</a>)\n</span>'
+        contents: '<span class="word-wrap">A front end developer with over five years of agency experience and working with startups,\nspecialising in designing and building user interfaces for digital products and mobile apps.\n<br><br>\nCurrently working as a UI Engineer at <a href="http://www.contentful.com/" target="_blank">Contentful</a> in Berlin.\n<br><br>\nTechnologies: HTML5, Sass, JavaScript, React, Angular, Ionic, Node.js, Express, PHP, Wordpress, Rails\n<br><br>\nHobbies / Interests: Photography, making music (<a href="https://soundcloud.com/hellotulips" target="_blank">SoundCloud</a>)\n</span>'
       }
     }
   }
@@ -201,7 +201,7 @@ class Terminal {
   }
 
   showHistory(key) {
-    if (this.history.length)
+    if (this.history.length) {
       if (key === 'up') {
           if (this.historyPosition === this.history.length) return;
           this.historyPosition++
@@ -211,7 +211,8 @@ class Terminal {
           if (this.historyPosition <= 1) return;
           this.historyPosition--
         }
-    this.$input.innerText = this.history[this.history.length - this.historyPosition];
+      this.$input.innerText = this.history[this.history.length - this.historyPosition];
+    }
   }
 }
 

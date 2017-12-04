@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config dev.webpack.config.js",
-    "build": "npm run clean-dist && NODE_ENV=production webpack -p --config prod.webpack.config.js",
+    "build": "npm run clean-dist && cp CNAME dist/CNAME && NODE_ENV=production webpack -p --config prod.webpack.config.js",
     "clean-dist": "rimraf ./dist/*"
   },
   "dependencies": {
