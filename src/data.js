@@ -1,32 +1,18 @@
 module.exports = {
   projects: [
     {
-      preview: 'Representing live Twitter traffic as sound',
-      title: 'Tweet FM',
-      description: 'A generative audio experiment. Tweets represented as sound using the WebAudio API (via Tone.js), Socket.IO, Twitter streams, and Google Maps.',
-      tags: ['Node.js', 'Express', 'Socket.io', 'Tone.js'],
-      href: 'http://tweet-fm.herokuapp.com/'
+      preview: `Forma 36 - Contentful's design system`,
+      title: 'Forma 36',
+      description: 'An open-source design system built with engineers and designers at Contentful',
+      tags: ['React', 'Storybook', 'Gatsby', 'Lerna'],
+      href: 'https://f36.contentful.com/'
     },
     {
-      preview: 'Crowdsourcing forgiveness with Twilio',
-      title: 'Only God Forgives',
-      description: 'Salvation as a Service. A confessions hotline powered by Twilio, built during a hacknight at Simpleweb. All recordings are saved and served for users to vote on.',
-      tags: ['Twilio', 'Node.js', 'Express', 'MongoDB'],
-      href: 'https://m10l.github.io/conf-react/'
-    },
-    {
-      preview: 'A jQuery Plugin for Unobtrusive Form Labels',
-      title: 'FloatLabel.js',
-      description: 'A jQuery plugin for displaying unobtrusive labels on forms',
-      tags: ['jQuery', 'CSS'],
-      href: 'http://labs.mikemitchell.co.uk/FloatLabelJS/'
-    },
-    {
-      preview: 'Lint your Code with Cats',
-      title: 'SublimeLinter Cat Gutter Theme',
-      description: 'A gutter theme for SublimeLinter featuring cats, because there are never enough cats',
-      tags: ['Cats', 'SublimeLinter'],
-      href: 'https://github.com/m10l/SublimeLinter-CatGutterTheme'
+      preview: 'Helping online communities showcase content creators',
+      title: 'Broadway',
+      description: 'An open-source project to help online communities launch directories of streamers currently live on Twitch',
+      tags: ['Twitch API', 'React', 'Netlify'],
+      href: 'https://broadway.cam/'
     }
   ],
 
