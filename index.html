@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mike Mitchell - Front End Developer &amp; UI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;1,6..12,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-black-100: #21222c;
+      --color-black-200: #414558;
+      --color-black-300: #a7abbe;
+
+      --color-grey-100: #414558;
+      --color-grey-200: #626784;
+      --color-grey-300: #b6b9c9;
+
+      --color-white-100: #f8f8f2;
+      --color-white-200: #ffffff;
+
+      --color-purple-100: #9580ff;
+      --color-purple-200: #d4ccff;
+
+      --color-pink-100: #ff80bf;
+      --color-pink-200: #ffcce5;
+    }
+
+    html {
+      min-height: 100%;
+    }
+
+    html, body {
+      margin: 0;
+    }
+
+    body {
+      background: var(--color-black-200);
+      color: var(--color-white-100);
+      padding: 0 64px;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Nunito Sans', sans-serif;
+      overflow: hidden;
+      transition: ease-in-out padding 100ms;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      animation: fade-in ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    .global-heading {
+      text-align: center;
+      margin: 128px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .global-heading span {
+      display: block;
+      border-top: 4px solid;
+      margin-top: 8px;
+      padding-top: 8px;
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .about {
+      background: var(--color-black-100);
+      max-width: 1200px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      border-top: 32px solid var(--color-grey-300);
+      border-radius: 8px 8px 0 0;
+      padding: 64px;
+      flex: 1;
+      font-family: 'IBM Plex Mono', monospace;
+      overflow-x: auto;
+      transition: ease-in-out padding 100ms;
+      transform: translate3d(0,100%,0);
+
+      animation: slide-in 1s ease 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    .markdown h1:before {
+      content: '# ';
+    }
+
+    .markdown h2:before {
+      content: '## ';
+    }
+
+    .markdown li:before {
+      content: '* ';
+    }
+
+    .prompt {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 0 24px;
+    }
+
+    .prompt-decoration {
+      color: var(--color-pink-100);
+    }
+
+    .prompt-caret {
+      background-color: var(--color-grey-300);
+      width: 4px;
+      height: 22px;
+      display: inline-block;
+      vertical-align: top;
+      animation: pulse 1s ease-in-out infinite;
+    }
+
+    .markdown p,
+    .markdown h1,
+    .markdown h2,
+    .markdown li {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+     line-height: 1.5;
+    }
+
+    .markdown ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .markdown h1,
+    .markdown h2,
+    .markdown p,
+    .markdown ul {
+      margin-bottom: 24px;
+    }
+
+    .markdown a {
+      text-decoration: none;
+      border-bottom: 2px solid;
+      color: var(--color-purple-100);
+      transition: ease-in-out color 100ms;
+    }
+
+    .markdown a:focus {
+      outline: none;
+    }
+
+    .markdown a:hover,
+    .markdown a:focus {
+      color: var(--color-pink-100);
+    }
+
+    @media only screen and (max-width: 1160px) {
+      body {
+        padding: 0 32px;
+      }
+
+      .about {
+        padding: 32px;
+      }
+    }
+
+    @media only screen and (max-width: 660px) {
+      body {
+        padding: 0 16px;
+      }
+
+      .about {
+        padding: 16px;
+      }
+    }
+
+
+    @keyframes pulse {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-in {
+      0% {
+        transform: translate3d(0,100%,0)
+      }
+
+      100% {
+        transform: translate3d(0,0,0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="global-heading">
+      Mike Mitchell
+      <span>Front End Developer</span>
+    </h1>
+  </header>
+  
+  <section class="about">
+    <p class="prompt"><span class="prompt-decoration">&#10095;</span> cat about.md</p>
+      
+    <div class="markdown">
+      <h1>Mike Mitchell</h1>
+
+      <ul>
+        <li>A UI Engineer & Front End Developer living in Berlin</li>
+        <li>Over 10 years of experience of building features and products with product teams</li>
+        <li>Specialises in design systems and bridging the gap between design and engineering</li>
+        <li>Previously at <a href="https://www.contentful.com/" target="_blank">Contentful</a>, building <a href="https://f36.contentful.com/" target="_blank">Forma 36</a> - Contentful’s design system</li>
+      </ul>
+
+      <h2>Get in Touch</h2>
+
+      <p>
+        <a href="mailto:omg@lol.xxx" target="_blank">omg@lol.xxx</a> | <a href="https://linkedin.com/in/mike-mitchell87" target="_blank">linkedin.com/in/mike-mitchell87</a> | <a href="https://github.com/m10l" target="_blank">github.com/m10l</a>
+      </p>
+    </div>
+    
+    <p class="prompt"><span class="prompt-decoration">&#10095; </span><span class="prompt-caret"></span></p>
+  </section>
+</body>
+</html>
